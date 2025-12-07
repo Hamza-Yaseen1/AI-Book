@@ -1,0 +1,144 @@
+﻿
+> physical-ai@0.0.0 build
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Server: Compiled successfully in 1.46s
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Client: Compiled successfully in 1.98s
+
+node.exe : [ERROR] Error: 
+Unable to build website for 
+locale en.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: ([ERRO  
+  R] Error: ... for local   
+ e en.:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+    at tryToBuildLocale (D:\
+Hackhthon\physical-ai\node_m
+odules\@docusaurus\core\lib\
+commands\build\build.js:83:1
+5)
+    at async D:\Hackhthon\ph
+ysical-ai\node_modules\@docu
+saurus\core\lib\commands\bui
+ld\build.js:35:9
+    at async 
+mapAsyncSequential (D:\Hackh
+thon\physical-ai\node_module
+s\@docusaurus\utils\lib\jsUt
+ils.js:21:24)
+    at async Command.build (
+D:\Hackhthon\physical-ai\nod
+e_modules\@docusaurus\core\l
+ib\commands\build\build.js:3
+4:5)
+    at async Promise.all 
+(index 0)
+    at async runCLI (D:\Hack
+hthon\physical-ai\node_modul
+es\@docusaurus\core\lib\comm
+ands\cli.js:56:5)
+    at async file:///D:/Hack
+hthon/physical-ai/node_modul
+es/@docusaurus/core/bin/docu
+saurus.mjs:44:3 {
+  [cause]: Error: 
+Docusaurus found broken 
+links!
+  
+  Please check the pages of 
+your site in the list 
+below, and make sure you 
+don't reference any path 
+that does not exist.
+  Note: it's possible to 
+ignore broken links with 
+the 'onBrokenLinks' 
+Docusaurus configuration, 
+and let the build pass.
+  
+  Exhaustive list of all 
+broken links found:
+  - Broken link on source 
+page path = 
+/docs/chapter-1/lesson-1:
+     -> linking to /static/e
+xamples/lesson-1-basic-senso
+r.py
+  - Broken link on source 
+page path = 
+/docs/chapter-1/lesson-2:
+     -> linking to /static/e
+xamples/lesson-2-smart-tempe
+rature-monitor.py
+  - Broken link on source 
+page path = 
+/docs/chapter-1/lesson-3:
+     -> linking to /static/e
+xamples/lesson-3-advanced-ad
+aptive-system.py
+  
+      at throwError (D:\Hack
+hthon\physical-ai\node_modul
+es\@docusaurus\logger\lib\lo
+gger.js:80:11)
+      at reportBrokenLinks (
+D:\Hackhthon\physical-ai\nod
+e_modules\@docusaurus\core\l
+ib\server\brokenLinks.js:250
+:47)
+      at handleBrokenLinks (
+D:\Hackhthon\physical-ai\nod
+e_modules\@docusaurus\core\l
+ib\server\brokenLinks.js:282
+:5)
+      at 
+executeBrokenLinksCheck (D:\
+Hackhthon\physical-ai\node_m
+odules\@docusaurus\core\lib\
+commands\build\buildLocale.j
+s:119:47)
+      at D:\Hackhthon\physic
+al-ai\node_modules\@docusaur
+us\core\lib\commands\build\b
+uildLocale.js:94:67
+      at Object.async (D:\Ha
+ckhthon\physical-ai\node_mod
+ules\@docusaurus\logger\lib\
+perfLogger.js:42:47)
+      at buildLocale (D:\Hac
+khthon\physical-ai\node_modu
+les\@docusaurus\core\lib\com
+mands\build\buildLocale.js:9
+4:31)
+[INFO] Docusaurus version: 3.9.2
+Node version: v22.19.0
+      at async 
+runBuildLocaleTask (D:\Hackh
+thon\physical-ai\node_module
+s\@docusaurus\core\lib\comma
+nds\build\build.js:98:5)
+      at async D:\Hackhthon\
+physical-ai\node_modules\@do
+cusaurus\core\lib\commands\b
+uild\build.js:79:13
+      at async 
+tryToBuildLocale (D:\Hackhth
+on\physical-ai\node_modules\
+@docusaurus\core\lib\command
+s\build\build.js:75:9)
+}
