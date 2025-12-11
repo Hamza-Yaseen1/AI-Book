@@ -4,6 +4,7 @@ Simple HTTP server to serve the frontend files for testing the integration.
 import http.server
 import socketserver
 import os
+import sys
 from pathlib import Path
 
 # Get the directory where this script is located
@@ -37,4 +38,5 @@ def run_server(port=3000):
             httpd.shutdown()
 
 if __name__ == "__main__":
-    run_server()
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 3000
+    run_server(port)

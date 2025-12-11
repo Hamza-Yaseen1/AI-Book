@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from config import OPENAI_API_KEY  # Ensure the key is loaded from your .env file
 from retrieval import retrieve_chunks_as_objects
 from models import RetrievalResult
+import os
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO)
@@ -15,17 +16,26 @@ logger = logging.getLogger(__name__)
 # Load environment variables
 load_dotenv()
 
-# Initialize OpenAI client
-if OPENAI_API_KEY.startswith("sk-or-"):
-    logger.info("Detected OpenRouter API key, using OpenRouter base URL")
-    import httpx
-    client = OpenAI(
-        api_key=OPENAI_API_KEY,
-        base_url="https://openrouter.ai/api/v1",
-        http_client=httpx.Client()
-    )
-else:
-    client = OpenAI(api_key=OPENAI_API_KEY)
+# Initialize OpenAI client or enable mock mode when a placeholder key is used
+client = None
+try:
+    if OPENAI_API_KEY and OPENAI_API_KEY.lower() in ("placeholder", "mock", "test"):
+        logger.warning("OPENAI_API_KEY is a placeholder/test value — running in mock mode (no real OpenAI calls)")
+        client = None
+    else:
+        if OPENAI_API_KEY.startswith("sk-or-"):
+            logger.info("Detected OpenRouter API key, using OpenRouter base URL")
+            import httpx
+            client = OpenAI(
+                api_key=OPENAI_API_KEY,
+                base_url="https://openrouter.ai/api/v1",
+                http_client=httpx.Client()
+            )
+        else:
+            client = OpenAI(api_key=OPENAI_API_KEY)
+except Exception:
+    logger.exception("Failed to initialize OpenAI client — entering mock mode")
+    client = None
 
 def retrieve_content_tool(query: str, max_results: int = 5) -> List[Dict[str, Any]]:
     """
@@ -81,25 +91,33 @@ def query_agent(query: str, max_results: int = 5) -> Dict[str, Any]:
         Please provide a helpful and accurate response based on the context. If the context doesn't contain relevant information, please say so. Include source URLs when referencing specific documents.
         """
 
-        # Call the OpenAI API with the modern client
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",  # Using gpt-3.5-turbo; change to gpt-4 if preferred
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are a helpful assistant that answers questions based on provided context. When referencing specific documents, include their source URLs."
-                },
-                {
-                    "role": "user",
-                    "content": full_prompt
-                }
-            ],
-            temperature=0.7,
-            max_tokens=1000
-        )
+        # If client is None, return a mock response for local testing
+        if client is None:
+            logger.info("Client is None — returning mock response for local testing")
+            agent_response = (
+                "[MOCK RESPONSE] This is a local mock response because the OpenAI API key is a placeholder or unavailable. "
+                "Retrieved documents are listed in the sources field."
+            )
+        else:
+            # Call the OpenAI API with the modern client
+            response = client.chat.completions.create(
+                model="gpt-3.5-turbo",  # Using gpt-3.5-turbo; change to gpt-4 if preferred
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are a helpful assistant that answers questions based on provided context. When referencing specific documents, include their source URLs."
+                    },
+                    {
+                        "role": "user",
+                        "content": full_prompt
+                    }
+                ],
+                temperature=0.7,
+                max_tokens=1000
+            )
 
-        # Extract the response
-        agent_response = response.choices[0].message.content
+            # Extract the response
+            agent_response = response.choices[0].message.content
 
         # Format the results as RetrievalResult objects for the response
         sources = []

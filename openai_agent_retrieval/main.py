@@ -80,8 +80,13 @@ async def process_query(request: QueryRequest):
         return response
 
     except Exception as e:
-        logger.error(f"Error processing query: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error processing query: {str(e)}")
+        logger.exception(f"Error processing query: {str(e)}")
+        msg = str(e)
+        # Map OpenAI auth errors to 401 so frontend can surface a clear message
+        if '401' in msg or 'user not found' in msg.lower() or 'invalid' in msg.lower() and 'key' in msg.lower():
+            raise HTTPException(status_code=401, detail=f"Authentication error while contacting OpenAI: {msg}")
+        else:
+            raise HTTPException(status_code=500, detail=f"Error processing query: {msg}")
 
 
 @app.get("/")
