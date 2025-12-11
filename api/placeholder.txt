@@ -1,0 +1,2 @@
+// This is a placeholder file to create the api directory
+// Actual API routes will be created as needed for Vercel deployment
