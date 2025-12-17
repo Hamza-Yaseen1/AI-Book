@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-hardware-compatibility" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Hardware Compatibility Guide | Physical AI Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://hamza-11-physical-ai.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://hamza-11-physical-ai.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://hamza-11-physical-ai.vercel.app/docs/hardware-compatibility"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Hardware Compatibility Guide | Physical AI Book"><meta data-rh="true" name="description" content="This guide provides information about hardware components that work well with Physical AI projects and their compatibility considerations."><meta data-rh="true" property="og:description" content="This guide provides information about hardware components that work well with Physical AI projects and their compatibility considerations."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://hamza-11-physical-ai.vercel.app/docs/hardware-compatibility"><link data-rh="true" rel="alternate" href="https://hamza-11-physical-ai.vercel.app/docs/hardware-compatibility" hreflang="en"><link data-rh="true" rel="alternate" href="https://hamza-11-physical-ai.vercel.app/docs/hardware-compatibility" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hardware Compatibility Guide","item":"https://hamza-11-physical-ai.vercel.app/docs/hardware-compatibility"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Physical AI Book RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Physical AI Book Atom Feed"><link rel="stylesheet" href="/assets/css/styles.bbc98a7f.css">
+<script src="/assets/js/runtime~main.8a14465c.js" defer="defer"></script>
+<script src="/assets/js/main.d2c776c8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.png"><div style="opacity:0"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI Book</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Chapters</a><a class="navbar__item navbar__link" href="/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/hamza-11/physical-ai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro"><span title="Physical AI Book: Introduction and Prerequisites" class="linkLabel_WmDU">Physical AI Book: Introduction and Prerequisites</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/chapter-1/lesson-1"><span title="Chapter 1: Physical AI Fundamentals" class="categoryLinkLabel_W154">Chapter 1: Physical AI Fundamentals</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/chapter-2/lesson-1"><span title="Chapter 2: Advanced Physical AI Systems" class="categoryLinkLabel_W154">Chapter 2: Advanced Physical AI Systems</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/ch03-ml-physical-ai/ch03-lesson01/"><span title="Chapter 3: Machine Learning for Physical AI" class="categoryLinkLabel_W154">Chapter 3: Machine Learning for Physical AI</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/ch04-physical-ai-applications/ch04-lesson01/"><span title="Chapter 4: Real-World Physical AI Applications" class="categoryLinkLabel_W154">Chapter 4: Real-World Physical AI Applications</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/troubleshooting"><span title="Resources" class="categoryLinkLabel_W154">Resources</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/troubleshooting"><span title="Troubleshooting Guide" class="linkLabel_WmDU">Troubleshooting Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/hardware-compatibility"><span title="Hardware Compatibility Guide" class="linkLabel_WmDU">Hardware Compatibility Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial-basics/create-a-page"><span title="Tutorial" class="categoryLinkLabel_W154">Tutorial</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial-extras/manage-docs-versions"><span title="Additional Resources" class="categoryLinkLabel_W154">Additional Resources</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Resources</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Hardware Compatibility Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Hardware Compatibility Guide</h1></header>
+<p>This guide provides information about hardware components that work well with Physical AI projects and their compatibility considerations.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-platforms">Recommended Platforms<a href="#recommended-platforms" class="hash-link" aria-label="Direct link to Recommended Platforms" title="Direct link to Recommended Platforms" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="raspberry-pi-family">Raspberry Pi Family<a href="#raspberry-pi-family" class="hash-link" aria-label="Direct link to Raspberry Pi Family" title="Direct link to Raspberry Pi Family" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p><strong>Raspberry Pi 4 Model B</strong>: Best performance for advanced Physical AI projects</p>
+<ul>
+<li class="">2GB/4GB/8GB RAM options</li>
+<li class="">Multiple USB ports for additional sensors</li>
+<li class="">Gigabit Ethernet for networked projects</li>
+<li class="">GPIO pins for hardware interfacing</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Raspberry Pi 3 Model B+</strong>: Good balance of performance and cost</p>
+<ul>
+<li class="">Built-in WiFi and Bluetooth</li>
+<li class="">40-pin GPIO header</li>
+<li class="">Sufficient for most Physical AI projects</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Raspberry Pi Zero W</strong>: Compact option for space-constrained projects</p>
+<ul>
+<li class="">Built-in WiFi and Bluetooth</li>
+<li class="">Smaller GPIO header</li>
+<li class="">Limited processing power</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="arduino-family">Arduino Family<a href="#arduino-family" class="hash-link" aria-label="Direct link to Arduino Family" title="Direct link to Arduino Family" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p><strong>Arduino Uno</strong>: Great for simple Physical AI projects</p>
+<ul>
+<li class="">Easy to use for beginners</li>
+<li class="">Extensive sensor library support</li>
+<li class="">Limited processing power but reliable</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Arduino Mega</strong>: For projects with many sensors</p>
+<ul>
+<li class="">More GPIO pins (54 digital I/O)</li>
+<li class="">More memory for complex algorithms</li>
+<li class="">Good for sensor-rich projects</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-compatibility">Sensor Compatibility<a href="#sensor-compatibility" class="hash-link" aria-label="Direct link to Sensor Compatibility" title="Direct link to Sensor Compatibility" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temperature-sensors">Temperature Sensors<a href="#temperature-sensors" class="hash-link" aria-label="Direct link to Temperature Sensors" title="Direct link to Temperature Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>DS18B20</strong>: Waterproof, accurate, 1-Wire interface</li>
+<li class=""><strong>DHT22</strong>: Temperature and humidity, good range</li>
+<li class=""><strong>BME280</strong>: Temperature, humidity, and pressure</li>
+<li class=""><strong>TMP36</strong>: Analog temperature sensor, simple to use</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="motion-sensors">Motion Sensors<a href="#motion-sensors" class="hash-link" aria-label="Direct link to Motion Sensors" title="Direct link to Motion Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>PIR Motion Sensor (HC-SR501)</strong>: Low power, effective range</li>
+<li class=""><strong>Accelerometer (MPU6050)</strong>: Motion and orientation detection</li>
+<li class=""><strong>Ultrasonic Sensor (HC-SR04)</strong>: Distance measurement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="light-sensors">Light Sensors<a href="#light-sensors" class="hash-link" aria-label="Direct link to Light Sensors" title="Direct link to Light Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Photoresistor (LDR)</strong>: Simple light detection</li>
+<li class=""><strong>BH1750</strong>: Digital light sensor, accurate measurements</li>
+<li class=""><strong>TSL2561</strong>: Advanced light sensor with IR compensation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="actuators">Actuators<a href="#actuators" class="hash-link" aria-label="Direct link to Actuators" title="Direct link to Actuators" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Servo Motors</strong>: Precise angular control (180°)</li>
+<li class=""><strong>Stepper Motors</strong>: Precise position control</li>
+<li class=""><strong>DC Motors</strong>: Continuous rotation (with motor driver)</li>
+<li class=""><strong>Relays</strong>: High-power switching capability</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-specific-considerations">Platform-Specific Considerations<a href="#platform-specific-considerations" class="hash-link" aria-label="Direct link to Platform-Specific Considerations" title="Direct link to Platform-Specific Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="raspberry-pi">Raspberry Pi<a href="#raspberry-pi" class="hash-link" aria-label="Direct link to Raspberry Pi" title="Direct link to Raspberry Pi" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Power Requirements</strong>: 5V/3A recommended for Pi 4</li>
+<li class=""><strong>GPIO Voltage</strong>: 3.3V logic levels (use level shifters for 5V sensors)</li>
+<li class=""><strong>Libraries</strong>: RPi.GPIO, wiringPi, pigpio</li>
+<li class=""><strong>OS</strong>: Raspbian/Raspberry Pi OS recommended</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="arduino">Arduino<a href="#arduino" class="hash-link" aria-label="Direct link to Arduino" title="Direct link to Arduino" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Power Requirements</strong>: 7-12V recommended (USB for simple projects)</li>
+<li class=""><strong>GPIO Voltage</strong>: 5V logic levels (3.3V sensors may need level shifters)</li>
+<li class=""><strong>Libraries</strong>: Built-in libraries plus extensive community libraries</li>
+<li class=""><strong>Programming</strong>: C/C++ via Arduino IDE</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="connectivity-options">Connectivity Options<a href="#connectivity-options" class="hash-link" aria-label="Direct link to Connectivity Options" title="Direct link to Connectivity Options" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wireless">Wireless<a href="#wireless" class="hash-link" aria-label="Direct link to Wireless" title="Direct link to Wireless" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>WiFi</strong>: Built into Pi 3+ and Arduino MKR series</li>
+<li class=""><strong>Bluetooth</strong>: Built into Pi 3+ and many Arduino boards</li>
+<li class=""><strong>LoRa</strong>: Long-range, low-power communication</li>
+<li class=""><strong>NFC/RFID</strong>: For identification and access control</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wired">Wired<a href="#wired" class="hash-link" aria-label="Direct link to Wired" title="Direct link to Wired" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Ethernet</strong>: Available on Pi, can be added to Arduino</li>
+<li class=""><strong>I2C</strong>: For multiple sensors with minimal pins</li>
+<li class=""><strong>SPI</strong>: High-speed communication with sensors</li>
+<li class=""><strong>UART</strong>: Serial communication with other devices</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-management">Power Management<a href="#power-management" class="hash-link" aria-label="Direct link to Power Management" title="Direct link to Power Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-sources">Power Sources<a href="#power-sources" class="hash-link" aria-label="Direct link to Power Sources" title="Direct link to Power Sources" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>USB Power</strong>: Convenient for development (5V/2-3A)</li>
+<li class=""><strong>Battery Packs</strong>: For portable projects (rechargeable Li-ion recommended)</li>
+<li class=""><strong>Wall Adapters</strong>: For stationary projects (regulated 5V)</li>
+<li class=""><strong>Power Banks</strong>: For temporary mobility</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-considerations">Power Considerations<a href="#power-considerations" class="hash-link" aria-label="Direct link to Power Considerations" title="Direct link to Power Considerations" translate="no">​</a></h3>
+<ul>
+<li class="">Calculate total power requirements before building</li>
+<li class="">Consider power consumption in different operational states</li>
+<li class="">Plan for surge currents when motors start</li>
+<li class="">Include power regulation and filtering for sensitive sensors</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-considerations">Safety Considerations<a href="#safety-considerations" class="hash-link" aria-label="Direct link to Safety Considerations" title="Direct link to Safety Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="electrical-safety">Electrical Safety<a href="#electrical-safety" class="hash-link" aria-label="Direct link to Electrical Safety" title="Direct link to Electrical Safety" translate="no">​</a></h3>
+<ul>
+<li class="">Use appropriate fuses for high-current devices</li>
+<li class="">Implement proper grounding</li>
+<li class="">Use isolation for high-voltage components</li>
+<li class="">Include emergency stop mechanisms</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mechanical-safety">Mechanical Safety<a href="#mechanical-safety" class="hash-link" aria-label="Direct link to Mechanical Safety" title="Direct link to Mechanical Safety" translate="no">​</a></h3>
+<ul>
+<li class="">Secure all moving parts</li>
+<li class="">Include physical limits for actuators</li>
+<li class="">Plan for safe failure modes</li>
+<li class="">Consider user interaction safety</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-benchmarks">Performance Benchmarks<a href="#performance-benchmarks" class="hash-link" aria-label="Direct link to Performance Benchmarks" title="Direct link to Performance Benchmarks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="processing-power">Processing Power<a href="#processing-power" class="hash-link" aria-label="Direct link to Processing Power" title="Direct link to Processing Power" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Raspberry Pi 4</strong>: Capable of running machine learning models</li>
+<li class=""><strong>Raspberry Pi 3</strong>: Good for basic AI algorithms</li>
+<li class=""><strong>Arduino</strong>: Limited to simple decision-making</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-sampling-rates">Sensor Sampling Rates<a href="#sensor-sampling-rates" class="hash-link" aria-label="Direct link to Sensor Sampling Rates" title="Direct link to Sensor Sampling Rates" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Analog Sensors</strong>: Limited by ADC speed (Arduino ~10kHz)</li>
+<li class=""><strong>Digital Sensors</strong>: Limited by communication protocol</li>
+<li class=""><strong>I2C</strong>: Typically 100kHz-400kHz</li>
+<li class=""><strong>SPI</strong>: Can reach several MHz</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="expansion-options">Expansion Options<a href="#expansion-options" class="hash-link" aria-label="Direct link to Expansion Options" title="Direct link to Expansion Options" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hats-hardware-attached-on-top">HATs (Hardware Attached on Top)<a href="#hats-hardware-attached-on-top" class="hash-link" aria-label="Direct link to HATs (Hardware Attached on Top)" title="Direct link to HATs (Hardware Attached on Top)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Camera Module</strong>: For computer vision projects</li>
+<li class=""><strong>Sense HAT</strong>: For environmental sensing and IMU</li>
+<li class=""><strong>Motor HAT</strong>: For multiple motor control</li>
+<li class=""><strong>Display HAT</strong>: For local UI</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="shields-for-arduino">Shields (for Arduino)<a href="#shields-for-arduino" class="hash-link" aria-label="Direct link to Shields (for Arduino)" title="Direct link to Shields (for Arduino)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Ethernet Shield</strong>: For network connectivity</li>
+<li class=""><strong>Motor Shield</strong>: For motor control</li>
+<li class=""><strong>Grove Shield</strong>: For easy sensor connection</li>
+<li class=""><strong>WiFi Shield</strong>: For wireless connectivity</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="budget-considerations">Budget Considerations<a href="#budget-considerations" class="hash-link" aria-label="Direct link to Budget Considerations" title="Direct link to Budget Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="entry-level--50">Entry Level (&lt; $50)<a href="#entry-level--50" class="hash-link" aria-label="Direct link to Entry Level (&lt; $50)" title="Direct link to Entry Level (&lt; $50)" translate="no">​</a></h3>
+<ul>
+<li class="">Arduino Uno + basic sensors</li>
+<li class="">Raspberry Pi Zero W + simple sensors</li>
+<li class="">Breadboard and jumper wires</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mid-range-50-150">Mid Range ($50-150)<a href="#mid-range-50-150" class="hash-link" aria-label="Direct link to Mid Range ($50-150)" title="Direct link to Mid Range ($50-150)" translate="no">​</a></h3>
+<ul>
+<li class="">Raspberry Pi 3 + sensor kit</li>
+<li class="">Arduino Uno with multiple sensors</li>
+<li class="">Basic actuators and components</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-150">Advanced ($150+)<a href="#advanced-150" class="hash-link" aria-label="Direct link to Advanced ($150+)" title="Direct link to Advanced ($150+)" translate="no">​</a></h3>
+<ul>
+<li class="">Raspberry Pi 4 with multiple HATs</li>
+<li class="">Complete sensor and actuator kits</li>
+<li class="">Specialized sensors and components</li>
+</ul>
+<p>Remember to consider the total cost of ownership including power supplies, enclosures, and additional components needed for your specific Physical AI projects.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/hamza-11/physical-ai/tree/main/docs/hardware-compatibility.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/troubleshooting"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Troubleshooting Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/tutorial-basics/create-a-page"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Create a Page</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#recommended-platforms" class="table-of-contents__link toc-highlight">Recommended Platforms</a><ul><li><a href="#raspberry-pi-family" class="table-of-contents__link toc-highlight">Raspberry Pi Family</a></li><li><a href="#arduino-family" class="table-of-contents__link toc-highlight">Arduino Family</a></li></ul></li><li><a href="#sensor-compatibility" class="table-of-contents__link toc-highlight">Sensor Compatibility</a><ul><li><a href="#temperature-sensors" class="table-of-contents__link toc-highlight">Temperature Sensors</a></li><li><a href="#motion-sensors" class="table-of-contents__link toc-highlight">Motion Sensors</a></li><li><a href="#light-sensors" class="table-of-contents__link toc-highlight">Light Sensors</a></li><li><a href="#actuators" class="table-of-contents__link toc-highlight">Actuators</a></li></ul></li><li><a href="#platform-specific-considerations" class="table-of-contents__link toc-highlight">Platform-Specific Considerations</a><ul><li><a href="#raspberry-pi" class="table-of-contents__link toc-highlight">Raspberry Pi</a></li><li><a href="#arduino" class="table-of-contents__link toc-highlight">Arduino</a></li></ul></li><li><a href="#connectivity-options" class="table-of-contents__link toc-highlight">Connectivity Options</a><ul><li><a href="#wireless" class="table-of-contents__link toc-highlight">Wireless</a></li><li><a href="#wired" class="table-of-contents__link toc-highlight">Wired</a></li></ul></li><li><a href="#power-management" class="table-of-contents__link toc-highlight">Power Management</a><ul><li><a href="#power-sources" class="table-of-contents__link toc-highlight">Power Sources</a></li><li><a href="#power-considerations" class="table-of-contents__link toc-highlight">Power Considerations</a></li></ul></li><li><a href="#safety-considerations" class="table-of-contents__link toc-highlight">Safety Considerations</a><ul><li><a href="#electrical-safety" class="table-of-contents__link toc-highlight">Electrical Safety</a></li><li><a href="#mechanical-safety" class="table-of-contents__link toc-highlight">Mechanical Safety</a></li></ul></li><li><a href="#performance-benchmarks" class="table-of-contents__link toc-highlight">Performance Benchmarks</a><ul><li><a href="#processing-power" class="table-of-contents__link toc-highlight">Processing Power</a></li><li><a href="#sensor-sampling-rates" class="table-of-contents__link toc-highlight">Sensor Sampling Rates</a></li></ul></li><li><a href="#expansion-options" class="table-of-contents__link toc-highlight">Expansion Options</a><ul><li><a href="#hats-hardware-attached-on-top" class="table-of-contents__link toc-highlight">HATs (Hardware Attached on Top)</a></li><li><a href="#shields-for-arduino" class="table-of-contents__link toc-highlight">Shields (for Arduino)</a></li></ul></li><li><a href="#budget-considerations" class="table-of-contents__link toc-highlight">Budget Considerations</a><ul><li><a href="#entry-level--50" class="table-of-contents__link toc-highlight">Entry Level (&lt; $50)</a></li><li><a href="#mid-range-50-150" class="table-of-contents__link toc-highlight">Mid Range ($50-150)</a></li><li><a href="#advanced-150" class="table-of-contents__link toc-highlight">Advanced ($150+)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Chapters</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/chapter-1/lesson-1">Chapter 1: Physical AI Fundamentals</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hamza-11/physical-ai" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Repository<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://example.com/physical-ai-community" target="_blank" rel="noopener noreferrer" class="footer__link-item">Physical AI Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://example.com/hardware-guide" target="_blank" rel="noopener noreferrer" class="footer__link-item">Hardware Guide<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/about">About</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI Book. Built with Docusaurus.</div></div></div></footer><button class="chat-button" aria-label="Open chat" title="AI Assistant"><svg class="chat-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></button></div></div>
+</body>
+</html>

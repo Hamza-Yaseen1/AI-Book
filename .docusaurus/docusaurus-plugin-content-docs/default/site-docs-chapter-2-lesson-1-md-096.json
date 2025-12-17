@@ -1,0 +1,27 @@
+{
+  "id": "chapter-2/lesson-1",
+  "title": "Lesson 1: Multi-Sensor Fusion and Data Integration",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter-2/lesson-1.md",
+  "sourceDirName": "chapter-2",
+  "slug": "/chapter-2/lesson-1",
+  "permalink": "/docs/chapter-2/lesson-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-2/lesson-1.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 3: Advanced Physical AI Concepts",
+    "permalink": "/docs/chapter-1/lesson-3"
+  },
+  "next": {
+    "title": "Lesson 2: Advanced Control Systems and Feedback Loops",
+    "permalink": "/docs/chapter-2/lesson-2"
+  }
+}

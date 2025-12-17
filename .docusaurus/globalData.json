@@ -1,0 +1,166 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "ch03-ml-physical-ai/ch03-lesson01/index",
+              "path": "/docs/ch03-ml-physical-ai/ch03-lesson01/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ch03-ml-physical-ai/ch03-lesson02/index",
+              "path": "/docs/ch03-ml-physical-ai/ch03-lesson02/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ch03-ml-physical-ai/ch03-lesson03/index",
+              "path": "/docs/ch03-ml-physical-ai/ch03-lesson03/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ch04-physical-ai-applications/ch04-lesson01/index",
+              "path": "/docs/ch04-physical-ai-applications/ch04-lesson01/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ch04-physical-ai-applications/ch04-lesson02/index",
+              "path": "/docs/ch04-physical-ai-applications/ch04-lesson02/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ch04-physical-ai-applications/ch04-lesson03/index",
+              "path": "/docs/ch04-physical-ai-applications/ch04-lesson03/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-1/lesson-1",
+              "path": "/docs/chapter-1/lesson-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-1/lesson-2",
+              "path": "/docs/chapter-1/lesson-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-1/lesson-3",
+              "path": "/docs/chapter-1/lesson-3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-2/lesson-1",
+              "path": "/docs/chapter-2/lesson-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-2/lesson-2",
+              "path": "/docs/chapter-2/lesson-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-2/lesson-3",
+              "path": "/docs/chapter-2/lesson-3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter-3/lesson-1",
+              "path": "/docs/chapter-3/lesson-1"
+            },
+            {
+              "id": "chapter-3/lesson-2",
+              "path": "/docs/chapter-3/lesson-2"
+            },
+            {
+              "id": "chapter-3/lesson-3",
+              "path": "/docs/chapter-3/lesson-3"
+            },
+            {
+              "id": "chapter-4/lesson-1",
+              "path": "/docs/chapter-4/lesson-1"
+            },
+            {
+              "id": "chapter-4/lesson-2",
+              "path": "/docs/chapter-4/lesson-2"
+            },
+            {
+              "id": "chapter-4/lesson-3",
+              "path": "/docs/chapter-4/lesson-3"
+            },
+            {
+              "id": "hardware-compatibility",
+              "path": "/docs/hardware-compatibility",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "troubleshooting",
+              "path": "/docs/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

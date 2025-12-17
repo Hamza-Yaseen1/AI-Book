@@ -1,0 +1,18 @@
+{
+  "id": "chapter-3/lesson-2",
+  "title": "Computer Vision in Physical AI",
+  "description": "Introduction",
+  "source": "@site/docs/chapter-3/lesson-2.md",
+  "sourceDirName": "chapter-3",
+  "slug": "/chapter-3/lesson-2",
+  "permalink": "/docs/chapter-3/lesson-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-3/lesson-2.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "chapter-2/lesson-3",
+  "title": "Lesson 3: Collaborative and Networked Physical AI",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter-2/lesson-3.md",
+  "sourceDirName": "chapter-2",
+  "slug": "/chapter-2/lesson-3",
+  "permalink": "/docs/chapter-2/lesson-3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-2/lesson-3.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 2: Advanced Control Systems and Feedback Loops",
+    "permalink": "/docs/chapter-2/lesson-2"
+  },
+  "next": {
+    "title": "Lesson 1: ML in Physical Systems",
+    "permalink": "/docs/ch03-ml-physical-ai/ch03-lesson01/"
+  }
+}

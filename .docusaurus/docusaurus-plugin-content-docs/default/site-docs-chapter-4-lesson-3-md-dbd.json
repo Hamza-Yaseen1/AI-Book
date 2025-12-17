@@ -1,0 +1,18 @@
+{
+  "id": "chapter-4/lesson-3",
+  "title": "Healthcare and Assistive Robotics",
+  "description": "Introduction",
+  "source": "@site/docs/chapter-4/lesson-3.md",
+  "sourceDirName": "chapter-4",
+  "slug": "/chapter-4/lesson-3",
+  "permalink": "/docs/chapter-4/lesson-3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-4/lesson-3.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}

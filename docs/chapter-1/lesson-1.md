@@ -51,7 +51,7 @@ For this lesson, we'll start with a simple Physical AI concept using a Raspberry
 
 We've provided a complete example that demonstrates the basic Physical AI concepts covered in this lesson. You can find the code in our examples directory:
 
-[Download Lesson 1 Example Code](/static/examples/lesson-1-basic-sensor.py)
+[Download Lesson 1 Example Code](/examples/lesson-1-basic-sensor.py)
 
 To run the example:
 ```bash

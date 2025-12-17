@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Physical AI Book: Introduction and Prerequisites",
+  "description": "Welcome to Physical AI",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Lesson 1: Introduction to Physical AI",
+    "permalink": "/docs/chapter-1/lesson-1"
+  }
+}

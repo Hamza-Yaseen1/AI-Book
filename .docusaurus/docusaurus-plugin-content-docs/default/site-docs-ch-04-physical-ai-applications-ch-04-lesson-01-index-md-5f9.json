@@ -1,0 +1,27 @@
+{
+  "id": "ch04-physical-ai-applications/ch04-lesson01/index",
+  "title": "Lesson 1: Smart Home Automation",
+  "description": "Introduction to Smart Home Automation",
+  "source": "@site/docs/ch04-physical-ai-applications/ch04-lesson01/index.md",
+  "sourceDirName": "ch04-physical-ai-applications/ch04-lesson01",
+  "slug": "/ch04-physical-ai-applications/ch04-lesson01/",
+  "permalink": "/docs/ch04-physical-ai-applications/ch04-lesson01/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/ch04-physical-ai-applications/ch04-lesson01/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 3: Reinforcement Learning",
+    "permalink": "/docs/ch03-ml-physical-ai/ch03-lesson03/"
+  },
+  "next": {
+    "title": "Lesson 2: Autonomous Navigation",
+    "permalink": "/docs/ch04-physical-ai-applications/ch04-lesson02/"
+  }
+}

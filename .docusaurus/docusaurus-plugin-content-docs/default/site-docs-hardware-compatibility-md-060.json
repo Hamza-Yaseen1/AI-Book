@@ -1,0 +1,27 @@
+{
+  "id": "hardware-compatibility",
+  "title": "Hardware Compatibility Guide",
+  "description": "This guide provides information about hardware components that work well with Physical AI projects and their compatibility considerations.",
+  "source": "@site/docs/hardware-compatibility.md",
+  "sourceDirName": ".",
+  "slug": "/hardware-compatibility",
+  "permalink": "/docs/hardware-compatibility",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/hardware-compatibility.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Troubleshooting Guide",
+    "permalink": "/docs/troubleshooting"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/tutorial-basics/create-a-page"
+  }
+}

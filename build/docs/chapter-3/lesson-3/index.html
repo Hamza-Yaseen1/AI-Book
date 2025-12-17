@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chapter-3/lesson-3" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Reinforcement Learning for Physical AI | Physical AI Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://hamza-11-physical-ai.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://hamza-11-physical-ai.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://hamza-11-physical-ai.vercel.app/docs/chapter-3/lesson-3"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Reinforcement Learning for Physical AI | Physical AI Book"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://hamza-11-physical-ai.vercel.app/docs/chapter-3/lesson-3"><link data-rh="true" rel="alternate" href="https://hamza-11-physical-ai.vercel.app/docs/chapter-3/lesson-3" hreflang="en"><link data-rh="true" rel="alternate" href="https://hamza-11-physical-ai.vercel.app/docs/chapter-3/lesson-3" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Physical AI Book RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Physical AI Book Atom Feed"><link rel="stylesheet" href="/assets/css/styles.bbc98a7f.css">
+<script src="/assets/js/runtime~main.8a14465c.js" defer="defer"></script>
+<script src="/assets/js/main.d2c776c8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.png"><div style="opacity:0"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI Book</b></a><a class="navbar__item navbar__link" href="/docs/intro">Chapters</a><a class="navbar__item navbar__link" href="/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/hamza-11/physical-ai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Reinforcement Learning for Physical AI</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
+<p>Reinforcement Learning (RL) provides a powerful framework for training agents to make sequential decisions in physical environments. Unlike supervised learning, RL learns through interaction with the environment, making it ideal for control tasks where the optimal policy is not known a priori.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-rl-concepts-in-physical-systems">Core RL Concepts in Physical Systems<a href="#core-rl-concepts-in-physical-systems" class="hash-link" aria-label="Direct link to Core RL Concepts in Physical Systems" title="Direct link to Core RL Concepts in Physical Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="markov-decision-processes-mdp">Markov Decision Processes (MDP)<a href="#markov-decision-processes-mdp" class="hash-link" aria-label="Direct link to Markov Decision Processes (MDP)" title="Direct link to Markov Decision Processes (MDP)" translate="no">​</a></h3>
+<p>Physical systems can often be modeled as MDPs where:</p>
+<ul>
+<li class=""><strong>State (S)</strong>: Current physical configuration (position, velocity, sensor readings)</li>
+<li class=""><strong>Action (A)</strong>: Control commands to the physical system</li>
+<li class=""><strong>Reward (R)</strong>: Feedback based on physical performance metrics</li>
+<li class=""><strong>Transition (T)</strong>: Physics governing state changes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="action-spaces">Action Spaces<a href="#action-spaces" class="hash-link" aria-label="Direct link to Action Spaces" title="Direct link to Action Spaces" translate="no">​</a></h3>
+<p>Physical systems often have continuous action spaces:</p>
+<ul>
+<li class="">Motor torques and velocities</li>
+<li class="">Joint angles and positions</li>
+<li class="">Thrust and steering commands</li>
+<li class="">Requires specialized algorithms like Actor-Critic methods</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rl-algorithms-for-physical-systems">RL Algorithms for Physical Systems<a href="#rl-algorithms-for-physical-systems" class="hash-link" aria-label="Direct link to RL Algorithms for Physical Systems" title="Direct link to RL Algorithms for Physical Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deep-deterministic-policy-gradient-ddpg">Deep Deterministic Policy Gradient (DDPG)<a href="#deep-deterministic-policy-gradient-ddpg" class="hash-link" aria-label="Direct link to Deep Deterministic Policy Gradient (DDPG)" title="Direct link to Deep Deterministic Policy Gradient (DDPG)" translate="no">​</a></h3>
+<ul>
+<li class="">Handles continuous action spaces effectively</li>
+<li class="">Off-policy learning with actor-critic architecture</li>
+<li class="">Good for motor control and manipulation tasks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="twin-delayed-ddpg-td3">Twin Delayed DDPG (TD3)<a href="#twin-delayed-ddpg-td3" class="hash-link" aria-label="Direct link to Twin Delayed DDPG (TD3)" title="Direct link to Twin Delayed DDPG (TD3)" translate="no">​</a></h3>
+<ul>
+<li class="">Improved version of DDPG with better stability</li>
+<li class="">Addresses overestimation bias in value estimation</li>
+<li class="">More reliable training in physical environments</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="soft-actor-critic-sac">Soft Actor-Critic (SAC)<a href="#soft-actor-critic-sac" class="hash-link" aria-label="Direct link to Soft Actor-Critic (SAC)" title="Direct link to Soft Actor-Critic (SAC)" translate="no">​</a></h3>
+<ul>
+<li class="">Maximum entropy RL approach</li>
+<li class="">Better exploration in complex physical environments</li>
+<li class="">Stable learning with sample efficiency</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="proximal-policy-optimization-ppo">Proximal Policy Optimization (PPO)<a href="#proximal-policy-optimization-ppo" class="hash-link" aria-label="Direct link to Proximal Policy Optimization (PPO)" title="Direct link to Proximal Policy Optimization (PPO)" translate="no">​</a></h3>
+<ul>
+<li class="">On-policy method with clipped objective</li>
+<li class="">More stable than vanilla policy gradient</li>
+<li class="">Good for complex control tasks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenges-in-physical-rl">Challenges in Physical RL<a href="#challenges-in-physical-rl" class="hash-link" aria-label="Direct link to Challenges in Physical RL" title="Direct link to Challenges in Physical RL" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-constraints">Safety Constraints<a href="#safety-constraints" class="hash-link" aria-label="Direct link to Safety Constraints" title="Direct link to Safety Constraints" translate="no">​</a></h3>
+<ul>
+<li class="">Physical systems have safety limits (speed, force, temperature)</li>
+<li class="">Need for constrained RL to respect physical boundaries</li>
+<li class="">Safe exploration strategies to avoid damage</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sample-efficiency">Sample Efficiency<a href="#sample-efficiency" class="hash-link" aria-label="Direct link to Sample Efficiency" title="Direct link to Sample Efficiency" translate="no">​</a></h3>
+<ul>
+<li class="">Physical systems are expensive to operate</li>
+<li class="">Limited time for training on real hardware</li>
+<li class="">Transfer from simulation to reality (sim-to-real gap)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-requirements">Real-time Requirements<a href="#real-time-requirements" class="hash-link" aria-label="Direct link to Real-time Requirements" title="Direct link to Real-time Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Physical systems often require immediate responses</li>
+<li class="">High-frequency control updates</li>
+<li class="">Limited computational resources on embedded systems</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-and-transfer">Simulation and Transfer<a href="#simulation-and-transfer" class="hash-link" aria-label="Direct link to Simulation and Transfer" title="Direct link to Simulation and Transfer" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="physics-simulation">Physics Simulation<a href="#physics-simulation" class="hash-link" aria-label="Direct link to Physics Simulation" title="Direct link to Physics Simulation" translate="no">​</a></h3>
+<ul>
+<li class="">High-fidelity simulators (PyBullet, MuJoCo, Gazebo)</li>
+<li class="">Domain randomization for robust policies</li>
+<li class="">Transfer learning from simulation to reality</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-identification">System Identification<a href="#system-identification" class="hash-link" aria-label="Direct link to System Identification" title="Direct link to System Identification" translate="no">​</a></h3>
+<ul>
+<li class="">Modeling physical system dynamics</li>
+<li class="">Parameter estimation for accurate simulation</li>
+<li class="">Adaptive control based on system changes</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="applications-in-physical-ai">Applications in Physical AI<a href="#applications-in-physical-ai" class="hash-link" aria-label="Direct link to Applications in Physical AI" title="Direct link to Applications in Physical AI" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robotics">Robotics<a href="#robotics" class="hash-link" aria-label="Direct link to Robotics" title="Direct link to Robotics" translate="no">​</a></h3>
+<ul>
+<li class="">Manipulation and grasping tasks</li>
+<li class="">Locomotion and gait learning</li>
+<li class="">Multi-agent coordination</li>
+<li class="">Adaptive control for unknown environments</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="autonomous-vehicles">Autonomous Vehicles<a href="#autonomous-vehicles" class="hash-link" aria-label="Direct link to Autonomous Vehicles" title="Direct link to Autonomous Vehicles" translate="no">​</a></h3>
+<ul>
+<li class="">Path planning and navigation</li>
+<li class="">Adaptive driving behaviors</li>
+<li class="">Traffic interaction strategies</li>
+<li class="">Emergency response policies</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="control-systems">Control Systems<a href="#control-systems" class="hash-link" aria-label="Direct link to Control Systems" title="Direct link to Control Systems" translate="no">​</a></h3>
+<ul>
+<li class="">Adaptive control for changing conditions</li>
+<li class="">Optimization of energy consumption</li>
+<li class="">Predictive maintenance policies</li>
+<li class="">Resource allocation strategies</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-implementation-considerations">Practical Implementation Considerations<a href="#practical-implementation-considerations" class="hash-link" aria-label="Direct link to Practical Implementation Considerations" title="Direct link to Practical Implementation Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reward-engineering">Reward Engineering<a href="#reward-engineering" class="hash-link" aria-label="Direct link to Reward Engineering" title="Direct link to Reward Engineering" translate="no">​</a></h3>
+<ul>
+<li class="">Designing appropriate reward functions</li>
+<li class="">Balancing multiple objectives</li>
+<li class="">Sparse vs. dense reward structures</li>
+<li class="">Avoiding reward hacking behaviors</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exploration-strategies">Exploration Strategies<a href="#exploration-strategies" class="hash-link" aria-label="Direct link to Exploration Strategies" title="Direct link to Exploration Strategies" translate="no">​</a></h3>
+<ul>
+<li class="">Efficient exploration in continuous spaces</li>
+<li class="">Noise schedules and types (Gaussian, Ornstein-Uhlenbeck)</li>
+<li class="">Curiosity-driven exploration for complex tasks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-integration">Hardware Integration<a href="#hardware-integration" class="hash-link" aria-label="Direct link to Hardware Integration" title="Direct link to Hardware Integration" translate="no">​</a></h3>
+<ul>
+<li class="">Real-time inference capabilities</li>
+<li class="">Communication protocols with physical systems</li>
+<li class="">Safety monitoring and intervention</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-robustness">Safety and Robustness<a href="#safety-and-robustness" class="hash-link" aria-label="Direct link to Safety and Robustness" title="Direct link to Safety and Robustness" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-modes">Failure Modes<a href="#failure-modes" class="hash-link" aria-label="Direct link to Failure Modes" title="Direct link to Failure Modes" translate="no">​</a></h3>
+<ul>
+<li class="">Understanding potential failure scenarios</li>
+<li class="">Robustness to environmental changes</li>
+<li class="">Graceful degradation when policies fail</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-in-the-loop">Human-in-the-Loop<a href="#human-in-the-loop" class="hash-link" aria-label="Direct link to Human-in-the-Loop" title="Direct link to Human-in-the-Loop" translate="no">​</a></h3>
+<ul>
+<li class="">Override capabilities for safety</li>
+<li class="">Policy validation before deployment</li>
+<li class="">Continuous monitoring and adaptation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
+<p>Reinforcement learning for physical AI systems presents unique challenges and opportunities. Success requires careful consideration of safety constraints, sample efficiency, and the specific dynamics of physical environments. With proper implementation, RL can enable sophisticated autonomous behaviors that adapt to changing conditions in real-world scenarios.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-3/lesson-3.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#core-rl-concepts-in-physical-systems" class="table-of-contents__link toc-highlight">Core RL Concepts in Physical Systems</a><ul><li><a href="#markov-decision-processes-mdp" class="table-of-contents__link toc-highlight">Markov Decision Processes (MDP)</a></li><li><a href="#action-spaces" class="table-of-contents__link toc-highlight">Action Spaces</a></li></ul></li><li><a href="#rl-algorithms-for-physical-systems" class="table-of-contents__link toc-highlight">RL Algorithms for Physical Systems</a><ul><li><a href="#deep-deterministic-policy-gradient-ddpg" class="table-of-contents__link toc-highlight">Deep Deterministic Policy Gradient (DDPG)</a></li><li><a href="#twin-delayed-ddpg-td3" class="table-of-contents__link toc-highlight">Twin Delayed DDPG (TD3)</a></li><li><a href="#soft-actor-critic-sac" class="table-of-contents__link toc-highlight">Soft Actor-Critic (SAC)</a></li><li><a href="#proximal-policy-optimization-ppo" class="table-of-contents__link toc-highlight">Proximal Policy Optimization (PPO)</a></li></ul></li><li><a href="#challenges-in-physical-rl" class="table-of-contents__link toc-highlight">Challenges in Physical RL</a><ul><li><a href="#safety-constraints" class="table-of-contents__link toc-highlight">Safety Constraints</a></li><li><a href="#sample-efficiency" class="table-of-contents__link toc-highlight">Sample Efficiency</a></li><li><a href="#real-time-requirements" class="table-of-contents__link toc-highlight">Real-time Requirements</a></li></ul></li><li><a href="#simulation-and-transfer" class="table-of-contents__link toc-highlight">Simulation and Transfer</a><ul><li><a href="#physics-simulation" class="table-of-contents__link toc-highlight">Physics Simulation</a></li><li><a href="#system-identification" class="table-of-contents__link toc-highlight">System Identification</a></li></ul></li><li><a href="#applications-in-physical-ai" class="table-of-contents__link toc-highlight">Applications in Physical AI</a><ul><li><a href="#robotics" class="table-of-contents__link toc-highlight">Robotics</a></li><li><a href="#autonomous-vehicles" class="table-of-contents__link toc-highlight">Autonomous Vehicles</a></li><li><a href="#control-systems" class="table-of-contents__link toc-highlight">Control Systems</a></li></ul></li><li><a href="#practical-implementation-considerations" class="table-of-contents__link toc-highlight">Practical Implementation Considerations</a><ul><li><a href="#reward-engineering" class="table-of-contents__link toc-highlight">Reward Engineering</a></li><li><a href="#exploration-strategies" class="table-of-contents__link toc-highlight">Exploration Strategies</a></li><li><a href="#hardware-integration" class="table-of-contents__link toc-highlight">Hardware Integration</a></li></ul></li><li><a href="#safety-and-robustness" class="table-of-contents__link toc-highlight">Safety and Robustness</a><ul><li><a href="#failure-modes" class="table-of-contents__link toc-highlight">Failure Modes</a></li><li><a href="#human-in-the-loop" class="table-of-contents__link toc-highlight">Human-in-the-Loop</a></li></ul></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Chapters</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/chapter-1/lesson-1">Chapter 1: Physical AI Fundamentals</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hamza-11/physical-ai" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Repository<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://example.com/physical-ai-community" target="_blank" rel="noopener noreferrer" class="footer__link-item">Physical AI Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://example.com/hardware-guide" target="_blank" rel="noopener noreferrer" class="footer__link-item">Hardware Guide<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/about">About</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI Book. Built with Docusaurus.</div></div></div></footer><button class="chat-button" aria-label="Open chat" title="AI Assistant"><svg class="chat-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></button></div></div>
+</body>
+</html>

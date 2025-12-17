@@ -1,0 +1,27 @@
+{
+  "id": "chapter-1/lesson-3",
+  "title": "Lesson 3: Advanced Physical AI Concepts",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter-1/lesson-3.md",
+  "sourceDirName": "chapter-1",
+  "slug": "/chapter-1/lesson-3",
+  "permalink": "/docs/chapter-1/lesson-3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-1/lesson-3.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 2: Building Your First Physical AI System",
+    "permalink": "/docs/chapter-1/lesson-2"
+  },
+  "next": {
+    "title": "Lesson 1: Multi-Sensor Fusion and Data Integration",
+    "permalink": "/docs/chapter-2/lesson-1"
+  }
+}

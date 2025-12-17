@@ -1,0 +1,18 @@
+{
+  "id": "chapter-4/lesson-1",
+  "title": "Industrial Automation and Manufacturing",
+  "description": "Introduction",
+  "source": "@site/docs/chapter-4/lesson-1.md",
+  "sourceDirName": "chapter-4",
+  "slug": "/chapter-4/lesson-1",
+  "permalink": "/docs/chapter-4/lesson-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-4/lesson-1.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  }
+}

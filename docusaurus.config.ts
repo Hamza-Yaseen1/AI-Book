@@ -15,17 +15,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ai-book-silk.vercel.app',
+  url: 'https://hamza-11-physical-ai.vercel.app', // Updated for Vercel deployment
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // For Vercel deployment, these are not needed
+  organizationName: 'hamza-11', // Your GitHub username
+  projectName: 'physical-ai', // Your repository name
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'warn', // Changed from 'ignore' to 'warn' to catch issues early
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -44,7 +43,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/hamza-11/physical-ai/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +54,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/hamza-11/physical-ai/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +88,7 @@ const config: Config = {
         },
         { to: '/about', label: 'About', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/hamza-11/physical-ai',
           label: 'GitHub',
           position: 'right',
         },
@@ -116,7 +115,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repository',
-              href: 'https://github.com/your-username/physical-ai-book',
+              href: 'https://github.com/hamza-11/physical-ai',
             },
             {
               label: 'Physical AI Community',

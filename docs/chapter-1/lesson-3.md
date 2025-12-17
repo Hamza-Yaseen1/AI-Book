@@ -36,7 +36,7 @@ In this lesson, we'll enhance our temperature monitoring system with machine lea
 
 We've provided a complete, advanced example that demonstrates the concepts covered in this lesson. You can find the code in our examples directory:
 
-[Download Lesson 3 Example Code](/static/examples/lesson-3-advanced-adaptive-system.py)
+[Download Lesson 3 Example Code](/examples/lesson-3-advanced-adaptive-system.py)
 
 To run the example:
 ```bash

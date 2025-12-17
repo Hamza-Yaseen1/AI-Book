@@ -95,7 +95,7 @@ In this lesson, we'll build a Physical AI system that monitors temperature and t
 
 We've provided a complete, runnable example that demonstrates the concepts covered in this lesson. You can find the code in our examples directory:
 
-[Download Lesson 2 Example Code](/static/examples/lesson-2-smart-temperature-monitor.py)
+[Download Lesson 2 Example Code](/examples/lesson-2-smart-temperature-monitor.py)
 
 To run the example:
 ```bash

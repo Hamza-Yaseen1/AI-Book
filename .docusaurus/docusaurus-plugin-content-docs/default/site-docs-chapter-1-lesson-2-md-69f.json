@@ -1,0 +1,27 @@
+{
+  "id": "chapter-1/lesson-2",
+  "title": "Lesson 2: Building Your First Physical AI System",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter-1/lesson-2.md",
+  "sourceDirName": "chapter-1",
+  "slug": "/chapter-1/lesson-2",
+  "permalink": "/docs/chapter-1/lesson-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/chapter-1/lesson-2.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 1: Introduction to Physical AI",
+    "permalink": "/docs/chapter-1/lesson-1"
+  },
+  "next": {
+    "title": "Lesson 3: Advanced Physical AI Concepts",
+    "permalink": "/docs/chapter-1/lesson-3"
+  }
+}

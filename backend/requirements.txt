@@ -1,5 +1,0 @@
-cohere==4.27
-qdrant-client==1.9.2
-beautifulsoup4==4.12.2
-requests==2.31.0
-python-dotenv==1.0.0

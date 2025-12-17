@@ -1,0 +1,27 @@
+{
+  "id": "ch04-physical-ai-applications/ch04-lesson03/index",
+  "title": "Lesson 3: Industrial Quality Control",
+  "description": "Introduction to Industrial Quality Control",
+  "source": "@site/docs/ch04-physical-ai-applications/ch04-lesson03/index.md",
+  "sourceDirName": "ch04-physical-ai-applications/ch04-lesson03",
+  "slug": "/ch04-physical-ai-applications/ch04-lesson03/",
+  "permalink": "/docs/ch04-physical-ai-applications/ch04-lesson03/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/ch04-physical-ai-applications/ch04-lesson03/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 2: Autonomous Navigation",
+    "permalink": "/docs/ch04-physical-ai-applications/ch04-lesson02/"
+  },
+  "next": {
+    "title": "Troubleshooting Guide",
+    "permalink": "/docs/troubleshooting"
+  }
+}

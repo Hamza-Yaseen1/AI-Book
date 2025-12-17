@@ -1,0 +1,27 @@
+{
+  "id": "ch03-ml-physical-ai/ch03-lesson02/index",
+  "title": "Lesson 2: Computer Vision",
+  "description": "Introduction to Computer Vision in Physical Systems",
+  "source": "@site/docs/ch03-ml-physical-ai/ch03-lesson02/index.md",
+  "sourceDirName": "ch03-ml-physical-ai/ch03-lesson02",
+  "slug": "/ch03-ml-physical-ai/ch03-lesson02/",
+  "permalink": "/docs/ch03-ml-physical-ai/ch03-lesson02/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/ch03-ml-physical-ai/ch03-lesson02/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 1: ML in Physical Systems",
+    "permalink": "/docs/ch03-ml-physical-ai/ch03-lesson01/"
+  },
+  "next": {
+    "title": "Lesson 3: Reinforcement Learning",
+    "permalink": "/docs/ch03-ml-physical-ai/ch03-lesson03/"
+  }
+}

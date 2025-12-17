@@ -1,0 +1,27 @@
+{
+  "id": "troubleshooting",
+  "title": "Troubleshooting Guide",
+  "description": "This guide provides solutions to common issues you may encounter while working with Physical AI systems.",
+  "source": "@site/docs/troubleshooting.md",
+  "sourceDirName": ".",
+  "slug": "/troubleshooting",
+  "permalink": "/docs/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/hamza-11/physical-ai/tree/main/docs/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lesson 3: Industrial Quality Control",
+    "permalink": "/docs/ch04-physical-ai-applications/ch04-lesson03/"
+  },
+  "next": {
+    "title": "Hardware Compatibility Guide",
+    "permalink": "/docs/hardware-compatibility"
+  }
+}
